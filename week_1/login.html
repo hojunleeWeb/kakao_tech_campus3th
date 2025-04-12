@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+            * {
+                font-family: "Gowun Dodum", sans-serif;
+            }
+            .wrap {
+                background-color: green;
+                width: 300px;
+                /*margin : auto -> width가 고정되어 있을때 가운데 정렬
+                정확히는 좌우 margin을 똑같이 만드는 역할 */
+                margin: 50px auto 0px auto;
+            }
+            .mytitle {
+                width: 300px;
+                height: 200px;
+                color: white;
+                text-align: center;
+
+                padding-top: 30px;
+                border-radius: 8px;
+                background-image: url("https://images.unsplash.com/photo-1511992243105-2992b3fd0410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+                background-position: center;
+                background-size: cover;
+            }
+            .mycards {
+                width: 1200px;
+
+                margin: 30px auto 0px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="mytitle">
+                <h1>로그인 페이지</h1>
+                <h5>아이디, 비밀번호를 입력해 주세요</h5>
+            </div>
+
+            <!--초보자인 상황에서는 한줄 입력하고 확인하고 반복해서 어디가 잘못된건지 
+            확인하는 것이 중요-->
+            <p>ID : <input type="text" /></p>
+            <p>PW : <input type="text" /></p>
+            <button>로그인하기</button>
+        </div>
+    </body>
+</html>
